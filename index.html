@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Self-driving car - No libraries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="canvasRow">
+        <canvas id="settingsCanvas"></canvas>
+        <canvas id="carCanvas"></canvas>
+        <canvas id="networkCanvas"></canvas>
+    </div>
+    <div id="controlsContainer">
+        <div id="difficultySelectorGame">
+            <label for="difficultySelect">Difficulty: </label>
+            <select id="difficultySelect">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div id="buttons">
+            <button id="saveButton">💾 Save</button>
+            <button id="discardButton">🗑️ Discard</button>
+        </div>
+    </div>
+    <script src="utils.js"></script>
+    <script src="sensor.js"></script>
+    <script src="road.js"></script>
+    <script src="controls.js"></script>
+    <script src="car.js"></script>
+    <script src="network.js"></script>
+    <script src="visualizer.js"></script>
+    <script src="settings.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
